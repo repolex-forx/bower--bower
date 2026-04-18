@@ -1,0 +1,67 @@
+[2026-04-18T14:11:23Z] === ENRICH ITERATION 1 START | repo=bower/bower sha=f18330b2 ===
+[2026-04-18T14:11:23Z] [iter=1] PHASE START: enrich repo=bower/bower sha=f18330b2 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/f18330b2-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/f18330b248bb5b796fd9fdeba63f0afdb76e5b4b.nq.gz
+[2026-04-18T14:11:59Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-18T14:12:05Z] [iter=1] AST store loaded triples=1004778 load_secs=6 mem_mb=879 MB
+[2026-04-18T14:12:05Z] [iter=1] Step 2: Finding LSP targets mem_mb=879 MB
+[2026-04-18T14:12:06Z] [iter=1] LSP targets found call_sites=12690 imports=0 extends=0 implements=0 secs=1
+[2026-04-18T14:12:06Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=879 MB
+[2026-04-18T14:12:12Z] [iter=1] Position index built positions=68604 nodes_with_types=82519 secs=6 mem_mb=879 MB
+[2026-04-18T14:12:12Z] [iter=1] Step 3: Starting LSP resolution mem_mb=879 MB already_completed_types=[] already_completed_files=0
+[2026-04-18T14:12:12Z] [iter=1] Resolving target type target_type=call_site count=12690
+[2026-04-18T14:12:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.8 files_done=0 resolved=0 errors=0 current=lib/config.js
+[2026-04-18T14:12:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.5 files_done=4 resolved=5 errors=101 current=test/util/createLink.js
+[2026-04-18T14:13:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=6 resolved=5 errors=242 current=test/core/resolvers/gitResolver.js
+[2026-04-18T14:18:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.1 files_done=7 resolved=15 errors=891 current=test/helpers.js
+[2026-04-18T14:19:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.0 files_done=9 resolved=18 errors=1017 current=test/core/resolvers/resolver.js
+[2026-04-18T14:22:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.4 files_done=10 resolved=24 errors=1503 current=lib/commands/prune.js
+[2026-04-18T14:24:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.7 files_done=13 resolved=24 errors=1680 current=test/core/resolvers/svnResolver.js
+[2026-04-18T14:27:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.7 files_done=14 resolved=34 errors=2120 current=test/commands/link.js
+[2026-04-18T14:28:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.8 files_done=17 resolved=34 errors=2274 current=test/core/resolverFactory.js
+[2026-04-18T14:30:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.5 files_done=18 resolved=36 errors=2649 current=lib/commands/register.js
+[2026-04-18T14:32:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.6 files_done=20 resolved=36 errors=2815 current=test/core/resolvers/urlResolver.js
+[2026-04-18T14:36:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.0 files_done=21 resolved=37 errors=3445 current=test/core/scripts.js
+[2026-04-18T14:37:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.7 files_done=24 resolved=43 errors=3538 current=test/assets/test-temp-dir/test-exception.js
+[2026-04-18T14:38:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.6 files_done=26 resolved=43 errors=3810 current=test/core/resolveCache.js
+[2026-04-18T14:44:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.9 files_done=27 resolved=116 errors=4553 current=lib/util/semver.js
+[2026-04-18T14:45:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.9 files_done=29 resolved=117 errors=4694 current=test/commands/help.js
+[2026-04-18T14:46:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.6 files_done=31 resolved=117 errors=4805 current=lib/util/copy.js
+[2026-04-18T14:47:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.7 files_done=35 resolved=136 errors=4950 current=packages/bower-json/lib/util/isComponent.js
+[2026-04-18T14:49:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.8 files_done=39 resolved=138 errors=5254 current=packages/bower-registry-client/lib/util/md5.js
+[2026-04-18T14:50:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.7 files_done=43 resolved=145 errors=5376 current=lib/core/Project.js
+[2026-04-18T14:51:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.9 files_done=44 resolved=148 errors=5551 current=test/commands/search.js
+[2026-04-18T14:52:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.4 files_done=46 resolved=157 errors=5741 current=lib/commands/cache/clean.js
+[2026-04-18T14:53:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=42.3 files_done=48 resolved=166 errors=5866 current=test/commands/install.js
+[2026-04-18T14:55:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=44.1 files_done=49 resolved=166 errors=6116 current=packages/bower-json/test/test.js
+[2026-04-18T14:57:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.9 files_done=50 resolved=167 errors=6375 current=test/packages-svn.js
+[2026-04-18T14:57:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.5 files_done=51 resolved=176 errors=6461 current=lib/core/resolvers/GitFsResolver.js
+[2026-04-18T14:58:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.1 files_done=54 resolved=176 errors=6556 current=test/renderers/StandardRenderer.js
+[2026-04-18T14:59:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.3 files_done=55 resolved=176 errors=6718 current=lib/core/resolvers/GitResolver.js
+[2026-04-18T15:00:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.1 files_done=57 resolved=178 errors=6828 current=packages/bower-config/lib/util/rc.js
+[2026-04-18T15:01:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.7 files_done=59 resolved=182 errors=6917 current=test/commands/uninstall.js
+[2026-04-18T15:02:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.5 files_done=61 resolved=183 errors=7172 current=test/core/packageRepository.js
+[2026-04-18T15:05:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.7 files_done=62 resolved=187 errors=7488 current=test/core/resolvers/fsResolver.js
+[2026-04-18T15:07:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.7 files_done=63 resolved=188 errors=7783 current=test/util/removeIgnores.js
+[2026-04-18T15:07:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=56.3 files_done=65 resolved=188 errors=7864 current=packages/bower-endpoint-parser/test/test.js
+[2026-04-18T15:08:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=56.8 files_done=66 resolved=188 errors=7940 current=test/core/resolvers/gitFsResolver.js
+[2026-04-18T15:09:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.8 files_done=67 resolved=188 errors=8081 current=packages/bower-registry-client/lib/lookup.js
+[2026-04-18T15:09:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=58.4 files_done=69 resolved=191 errors=8164 current=lib/core/resolvers/SvnResolver.js
+[2026-04-18T15:10:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=59.0 files_done=70 resolved=195 errors=8249 current=packages/bower-config/test/util/rc.js
+[2026-04-18T15:11:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.0 files_done=72 resolved=197 errors=8382 current=lib/core/resolverFactory.js
+[2026-04-18T15:11:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.6 files_done=74 resolved=198 errors=8472 current=lib/util/readJson.js
+[2026-04-18T15:12:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.2 files_done=76 resolved=200 errors=8561 current=lib/util/relativeToBaseDir.js
+[2026-04-18T15:13:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.1 files_done=81 resolved=200 errors=8687 current=packages/bower-registry-client/lib/list.js
+[2026-04-18T15:14:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.8 files_done=84 resolved=204 errors=8784 current=lib/util/cmd.js
+[2026-04-18T15:14:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.4 files_done=88 resolved=207 errors=8877 current=lib/util/rimraf.js
+[2026-04-18T15:15:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.1 files_done=93 resolved=207 errors=8966 current=packages/bower-registry-client/test/core/list.js
+[2026-04-18T15:16:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.8 files_done=97 resolved=215 errors=9067 current=test/commands/lookup.js
+[2026-04-18T15:17:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.6 files_done=100 resolved=216 errors=9191 current=packages/bower-config/test/test.js
+[2026-04-18T15:17:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.2 files_done=103 resolved=220 errors=9265 current=lib/util/fs.js
+[2026-04-18T15:18:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.8 files_done=107 resolved=224 errors=9356 current=test/util/relativeToBaseDir.js
+[2026-04-18T15:18:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.5 files_done=113 resolved=230 errors=9449 current=lib/commands/info.js
+[2026-04-18T15:19:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.0 files_done=121 resolved=233 errors=9528 current=lib/commands/cache/list.js
+[2026-04-18T15:19:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.5 files_done=128 resolved=233 errors=9603 current=lib/commands/install.js
+[2026-04-18T15:20:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.1 files_done=139 resolved=235 errors=9680 current=packages/bower-registry-client/lib/index.js
+[2026-04-18T15:20:39Z] [iter=1] Target type resolved target_type=call_site resolved=244 errors=9706 secs=4107 mem_mb=879 MB
+[2026-04-18T15:20:44Z] [iter=1] Step 5: Writing final enrichment file triples=85428
+[2026-04-18T15:20:46Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/f18330b248bb5b796fd9fdeba63f0afdb76e5b4b.nq.gz size_kb=1713
+[2026-04-18T15:20:46Z] [iter=1] PHASE END: enrich elapsed_s=4163 elapsed_min=69.4 total_triples=85428
